@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trip Planner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F8F8F8;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #FFFFFF;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #CCCCCC;
+      border-radius: 5px;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #CCCCCC;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Trip Planner</h1>
+    <form>
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" name="destination" required>
+
+      <label for="dates">Travel Dates:</label>
+      <input type="text" id="dates" name="dates" placeholder="e.g., MM/DD/YYYY - MM/DD/YYYY" required>
+
+      <label for="interests">Interests:</label>
+      <textarea id="interests" name="interests" placeholder="Enter your main interests or activities" required></textarea>
+
+      <label for="budget">Budget:</label>
+      <input type="text" id="budget" name="budget" required>
+
+      <label for="accommodation">Accommodation:</label>
+      <select id="accommodation" name="accommodation" required>
+        <option value="hotel">Hotel</option>
+        <option value="hostel">Hostel</option>
+        <option value="airbnb">Airbnb</option>
+      </select>
+
+      <label for="transportation">Transportation:</label>
+      <input type="text" id="transportation" name="transportation" required>
+
+      <label for="companions">Travel Companions:</label>
+      <input type="text" id="companions" name="companions" required>
+
+      <label for="requirements">Specific Requirements:</label>
+      <textarea id="requirements" name="requirements" placeholder="Enter any specific requirements or preferences"></textarea>
+
+      <button type="submit">Create Planner</button>
+    </form>
+  </div>
+</body>
+</html>
